@@ -1,35 +1,19 @@
 # _Hair Salon_
 
-#### _Friday projecgt_, _March 20, 2020_
+#### _Friday project_, _March 20, 2020_
 
 #### By _**Joseph Wangemann**_
 
 ## Description
 
-This projects . 
+This project... . 
 
 ## Project Specifications
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-|When user opens application they have a choice to see all restaurants or see all cuisines | Home | "See All Restaurants", "See All Cuisines."|
-| When a user clicks "See All Cuisines", they are provided with a list of all Cuisines | Click: "See All Cuisines" | "Cuisines:" "Cuisine1", "Cuisine2" OR "Add New Cuisine"|
-| When a user clicks on "Add A New Cuisine", they are directed to a form to add a new cuisine | Cick: "Add A New Cuisine | "Add A New Cuisine" Name: "Input Name" |
-|When a User Adds a new Cuisine Name they are directed back to the Cuisines Index page | Name: "Spanish" Submit: "Add New Cuisine" | Cuisines: "Spanish" |
-|When a user clicks on a cuisine name, they are directed to a list of Restaurants of that Cuisine | Click: "Cuisine Name" | Cuisine Details: "List of Restaurants:" |
-| From the Cuisine Details Page, when a user click on "Edit Cuisine", they are directed to a Edit Page Form | Click: "Edit Cuisine" | Edit: "Cuisine Name" |
-| When a user clicks on "Delete Cuisine," they are directed to a confirmation page | Click: "Delete Cuisine" | "Are you sure you want to delete this?" |
-|When the user clicks on the name of a restaurant. They are directed to the detail page for that restaurant | Click: "Restaurant Name" | "Restaurant Name Deatails: |
-|From the Restaurant Details Page, when the user clicks "Edit Restaurant Details", they are directed to an Restaurants/Edit Page | Click: "Edit Restaurant Details" | Edit "Restaurant Name" with Edit Form |
-| After the User Submits the edit form, they are directed back to the Restaurant Details page | Click: "Save Changes" | Restaurant Index | 
-| From the Restaurant Details Page, when the user clicks on Delete this restaurant, they are directed to a confirmation page | Click: "Delete This Restaurant" | "Are you sure you want delete 'Restaurant Name' |
-| From the Restaurant Details page, when the user clicks on the "Add A Review Button," they are directed to a review form for that particular restaurant | Click: "Add A Review" | Add a new review for "Restaurant Name" | 
-|After the User Fills out the review and submits, they are directed back to the the restaurant details page and can see their review | Submit: " "Add Review" | "'Restaurant Name' Details" |
-| When a user clicks "Read Review", they are directed to a page displaying specific details from that Review | Click: "Read Review" | Review Detail Page |
-|From the Home Page, when User Clicks "See all Restaurants" they are directed to an index of all restaurants with a description | Click: "See All Restaurants" | "Restaurant Index:"| 
-| From the Restaurant Index Page, when the user clicks "Add New Restaurant", they are directed to an Add new Restaurant Create Page Form | Click: "Add New Restaurant" | Add A New Restaurant Form |
-| After the user Adds a New Restaurant, they are directed back to the Restaurant Index, where the new restaurant can be seen| Submit: "Add Restaurant" | Restaurant Index |
-| When the user enters a term into the search bar, they are returned with a list of Restaurants whose names or keywords match the search | Search: "Pizza" | Your Search Results: |
+| Allow user... | Example:  | Output: |
+
 
 | 
 ||||
@@ -57,7 +41,7 @@ git clone  https://github.com/fractalscape13/HairSalon
 
 * Navigate to the project folder by typing:
 ```sh
-cd Best-Restaurants/BestRestaurants
+cd HairSalon.Solution/HairSalon
 ```
 * Restore the project with this terminal command:
 ```sh
@@ -71,17 +55,17 @@ mysql -uroot -p{your password}
 
 * Create a new table by typing:
 ```sh
-CREATE DATABASE best_restaurant;
+CREATE DATABASE joseph_wangemann;
 ```
 
 * Open your new database by typing:
 ```sh
-USE best_restaurant;
+USE joseph_wangemann;
 ```
 
 * Create Cuisine table by typing:
 ```sh
-CREATE TABLE `cuisines` (
+CREATE TABLE `stylists` (
   `CuisineId` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`CuisineId`)
@@ -90,7 +74,7 @@ CREATE TABLE `cuisines` (
 
 * Create Restaurants table by typing:
 ```sh
-CREATE TABLE `restaurants` (
+CREATE TABLE `clients` (
   `RestaurantId` int(11) NOT NULL AUTO_INCREMENT,
   `CuisineId` int(11) DEFAULT '0',
   `Name` varchar(255) DEFAULT NULL,
@@ -99,18 +83,6 @@ CREATE TABLE `restaurants` (
   `Rating` int(10) DEFAULT NULL,
   `KeyWords` text,
   PRIMARY KEY (`RestaurantId`)
-);
-```
-
-* Create a Reviews table by typing:
-```sh
-CREATE TABLE `reviews` (
-  `ReviewId` int(11) NOT NULL AUTO_INCREMENT,
-  `RestaurantId` int(11) DEFAULT '0',
-  `UserName` varchar(255) DEFAULT NULL,
-  `ReviewBody` text,
-  `Rating` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ReviewId`)
 );
 ```
 
