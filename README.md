@@ -1,12 +1,12 @@
 # _Hair Salon_
 
-#### _Friday project_, _March 20, 2020_
+#### _Business app for tracking stylists and clients_, _March 20, 2020_
 
 #### By _**Joseph Wangemann**_
 
 ## Description
 
-This project... . 
+This project creates an application for tracking stylists at the salon and their associated clients . 
 
 ## Project Specifications
 
