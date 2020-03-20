@@ -16,5 +16,4 @@ namespace HairSalon.Models
     public string KeyWords { get; set; }
     public virtual ICollection<Client> Clients { get; set; }
   }
-
 }
