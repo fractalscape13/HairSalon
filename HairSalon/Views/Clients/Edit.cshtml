@@ -17,10 +17,10 @@
       @Html.LabelFor(model => model.Phone)<br>
       @Html.TextBoxFor(model => model.Phone)
     </div>
-    <div>
+    @* <div>
       @Html.LabelFor(model => model.Stylist)
       @Html.DropDownList("StylistId",  (IEnumerable<SelectListItem>)ViewBag.StylistId)
-    </div>
+    </div> *@
     <input type="submit" value="Save changes" class="btn">
   }
   <p>@Html.ActionLink("Back to client list", "Index")</p>
