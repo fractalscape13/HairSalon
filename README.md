@@ -68,7 +68,7 @@ CREATE TABLE stylists (StylistId serial PRIMARY KEY, Name VARCHAR (255), Phone V
 
 * Create Restaurants table by typing:
 ```sh
-CREATE TABLE clients (ClientId serial PRIMARY KEY, Name VARCHAR (255), Phone VARCHAR (255));
+CREATE TABLE clients (ClientId serial PRIMARY KEY, Name VARCHAR (255), Phone VARCHAR (255), StylistId INT);
 ```
 
 * Now exit MySql by typing:
