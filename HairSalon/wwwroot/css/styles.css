@@ -20,6 +20,17 @@ body {
   padding: 20px;
 }
 
+
+input {
+  background-color: black;
+  color: ivory;
+  border: 3px solid rgba(5, 245, 245, 0.493);
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  width: 90%;
+}
+
 .btn {
   background-image: radial-gradient(rgb(179, 179, 179), rgb(27, 27, 165));
   width: 35%;
@@ -31,16 +42,6 @@ body {
 .btn:hover {
   cursor: pointer;
   opacity: .8;
-}
-
-input {
-  background-color: black;
-  color: ivory;
-  border: 3px solid rgba(5, 245, 245, 0.493);
-  border-radius: 15px;
-  margin: 10px;
-  text-align: center;
-  width: 90%;
 }
 
 .info {
