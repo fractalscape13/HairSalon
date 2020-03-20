@@ -5,7 +5,7 @@ html {
 
 body {
   background-color: black;
-  background-image: linear-gradient(black, indigo, rgb(2, 97, 134), black);
+  background-image: linear-gradient(black, rgb(47, 12, 71), rgb(2, 97, 134), black);
   text-align: center;
   font-family: courier;
   color: rgb(255, 255, 240);
@@ -21,7 +21,7 @@ body {
 }
 
 .btn {
-  background-image: radial-gradient(gray, darkblue);
+  background-image: radial-gradient(rgb(179, 179, 179), rgb(27, 27, 165));
   width: 35%;
   border: 5px solid black;
   margin: 15px;
@@ -30,15 +30,17 @@ body {
 
 .btn:hover {
   cursor: pointer;
-  opacity: .6;
+  opacity: .8;
 }
 
 input {
   background-color: black;
   color: ivory;
+  border: 3px solid rgba(5, 245, 245, 0.493);
   border-radius: 15px;
   margin: 10px;
   text-align: center;
+  width: 90%;
 }
 
 select {
@@ -47,4 +49,8 @@ select {
 
 li {
   margin: 15px;
+}
+
+h3 {
+  color: rgb(31, 31, 134);
 }
