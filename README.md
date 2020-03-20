@@ -63,25 +63,12 @@ USE joseph_wangemann;
 
 * Create Cuisine table by typing:
 ```sh
-CREATE TABLE `stylists` (
-  `CuisineId` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`CuisineId`)
-);
+CREATE TABLE stylists (StylistId serial PRIMARY KEY, Name VARCHAR (255), Phone VARCHAR (255), Hours VARCHAR (255), KeyWords TEXT);
 ```
 
 * Create Restaurants table by typing:
 ```sh
-CREATE TABLE `clients` (
-  `RestaurantId` int(11) NOT NULL AUTO_INCREMENT,
-  `CuisineId` int(11) DEFAULT '0',
-  `Name` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `Hours` varchar(255) DEFAULT NULL,
-  `Rating` int(10) DEFAULT NULL,
-  `KeyWords` text,
-  PRIMARY KEY (`RestaurantId`)
-);
+CREATE TABLE clients (ClientId serial PRIMARY KEY, Name VARCHAR (255), Phone VARCHAR (255));
 ```
 
 * Now exit MySql by typing:
@@ -112,7 +99,7 @@ _No known bugs at this time._
 
 ## Support and contact details
 
-This tool is provided as is. 
+If you have any comments or questions, please submit a pull request on my repository. 
 
 ## Technologies Used
 * [_Git_](https://git-scm.com/downloads)
