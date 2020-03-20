@@ -15,8 +15,6 @@ This project... .
 | Allow user... | Example:  | Output: |
 
 
-| 
-||||
 
 ## Setup/Installation Requirements
 _Make sure you have these tools installed on your computer:_
