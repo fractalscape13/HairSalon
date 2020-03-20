@@ -8,20 +8,23 @@
 <h2>@Html.DisplayFor(model => model.Name)'s Details</h2>
 
 <div class="box">
-  <h4>Phone number: @Html.DisplayFor(model => model.Phone)</h4>
-  <h4>Hours: @Html.DisplayFor(model => model.Hours)</h4>
-
+  <h4>Phone number: <span class="info">@Html.DisplayFor(model => model.Phone)</span></h4>
+  <h4>Hours: <span class="info">@Html.DisplayFor(model => model.Hours)</span></h4>
+  <h4>Clients:</h4>
   @if (@Model.Clients.Count == 0)
   {
-    <p>No clients found for this stylist</p>
+    <p class="info">No clients found for this stylist</p>
   }
 
   @foreach (Client client in @Model.Clients)
   {
-    <p>@client.Name</p>
+    <p class="info">@client.Name</p>
   }
 
+  <h4>@Html.ActionLink("Add a client", "Create", "Clients")</h4>
   <p>@Html.ActionLink("Back to Stylist List", "Index")</p>
   <p>@Html.ActionLink("Edit this stylist", "Edit", new { id = Model.StylistId })</p>
   <p>@Html.ActionLink("Delete this stylist", "Delete", new { id = Model.StylistId })</p>
+  <p>@Html.ActionLink("Back to homepage", "Index", "Home")</p>
+
 </div>
