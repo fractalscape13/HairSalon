@@ -44,10 +44,6 @@ input {
   opacity: .8;
 }
 
-.info {
-  color: rgb(136, 205, 207);
-}
-
 select {
   margin: 10px;
 }
@@ -58,4 +54,8 @@ h3 {
 
 a {
   color: rgb(33, 33, 126);
+}
+
+.info {
+  color: rgb(136, 205, 207);
 }

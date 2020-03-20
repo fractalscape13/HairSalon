@@ -18,13 +18,15 @@
 
   @foreach (Client client in @Model.Clients)
   {
-    <p class="info">@client.Name</p>
+    <h3 class="info">@Html.ActionLink(@client.Name, "Details", "Clients", new { id = client.ClientId })</h3>
   }
 
+  <hr />
   <h4>@Html.ActionLink("Add a client", "Create", "Clients")</h4>
+  <hr />
   <p>@Html.ActionLink("Edit this stylist", "Edit", new { id = Model.StylistId })</p>
   <p>@Html.ActionLink("Delete this stylist", "Delete", new { id = Model.StylistId })</p>
-  <p>@Html.ActionLink("Back to Stylist List", "Index")</p>
+  <p>@Html.ActionLink("Back to all stylists", "Index")</p>
   <p>@Html.ActionLink("Back to homepage", "Index", "Home")</p>
 
 </div>
