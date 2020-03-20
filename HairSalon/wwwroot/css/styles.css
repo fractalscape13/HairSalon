@@ -1,0 +1,50 @@
+body,
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: black;
+  background-image: linear-gradient(black, indigo, rgb(2, 97, 134), black);
+  text-align: center;
+  font-family: courier;
+  color: rgb(255, 255, 240);
+  margin-top: 0px;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, .5);
+  margin: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+}
+
+.btn {
+  background-image: radial-gradient(gray, darkblue);
+  width: 35%;
+  border: 5px solid black;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+input {
+  background-color: black;
+  color: ivory;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+select {
+  margin: 10px;
+}
+
+li {
+  margin: 15px;
+}
