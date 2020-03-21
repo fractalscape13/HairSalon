@@ -12,7 +12,10 @@ This project creates an application for tracking stylists at the salon and their
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-| Allow user... | Example:  | Output: |
+| Allow user to create a stylist | Example: Click add stylist, fill out form  | Output: Name of stylist shown on stylist list page |
+| Allow user to create a client | Example: Click add client from stylist detail page, fill out form  | Output: Name of client shown on stylist detail page |
+| Allow user to delete | Example: Click delete for stylist or client, submit confirmation  | Output: Name of stylist or client is removed from list |
+| Allow user to edit | Example: Click edit for stylist or client, submit form  | Output: Changes are shown on detail page |
 
 
 
@@ -95,7 +98,7 @@ Ctrl + C
 
 ## Known Bugs
 
-_No known bugs at this time._
+_Updating a client currently deletes the client._
 
 ## Support and contact details
 
